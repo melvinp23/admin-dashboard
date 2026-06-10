@@ -5,18 +5,91 @@ body {
 	grid-template-rows: repeat(4, 1fr);
 }
 
+#user-profile {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+}
+
+#user-profile > #profile-icon {
+	width: 40px;
+	height: 40px;
+}
+
+#user-profile > #notification-bell {
+	width: 20px;
+	height: 20px;
+}
+
+#user-info {
+	display: grid;
+	grid-auto-flow: column;
+}
+
+#user-header-bottom > #profile-picture {
+	width: 50px;
+	height: 50px;
+}
+
 #sidebar {
-	grid-row: span 4;
-	background-color: lightblue;
+	display: grid;
+	grid-template-rows: 60px 1fr 1fr;
+	grid-row-start: 1;
+	grid-row-end: 5;
+	background-color: #1992d4;
+}
+
+#sidebar img {
+	width: 20px;
+	height: 20px;
+}
+
+#sidebar-logo {
+	align-self: center;
 }
 
 #header {
-	grid-column: span 3;
-	background-color: lightcoral;
+	display: grid;
+	grid-template-rows: 60px 1fr;
+	grid-column-start: 2;
+	grid-column-end: 5;
+}
+
+#user-header-top {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+#user-header-bottom {
+	display: grid;
+	grid-template-columns: 50px 1fr 1fr;
 }
 
 #main-content {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
 	grid-row: span 3;
 	grid-column: span 3;
-	background-color: lightseagreen;
+	background-color: #e2e8f0;
+}
+
+#your-projects {
+	display: grid;
+	grid-template-rows: 30px 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+	grid-row: span 3;
+}
+
+#project-title {
+	grid-column: span 2;
+}
+
+#announcements {
+	display: grid;
+	grid-template-rows: 30px 1fr;
+}
+
+#trending {
+	display: grid;
+	grid-template-rows: 30px 1fr;
 }

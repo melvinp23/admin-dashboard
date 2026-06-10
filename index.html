@@ -10,32 +10,94 @@
 
     <body>
         <div id="sidebar">
-            <div>Dashboard</div>
-            <div>Home</div>
-            <div>Profile</div>
-            <div>Messages</div>
-            <div>History</div>
-            <div>Tasks</div>
-            <div>Communities</div>
 
-            <div>Settings</div>
-            <div>Support</div>
-            <div>Privacy</div>
+            <div id="sidebar-logo">Dashboard</div>
+
+            <div id="navigation">
+                <div>
+                    <img src="./images/home.svg" alt="home-icon">
+                    Home
+                </div>
+
+                <div>
+                    <img src="./images/profile-card.svg" alt="profile-card-icon">
+                    Profile
+                </div>
+
+                <div>
+                    <img src="./images/message.svg" alt="messages-icon">
+                    Messages
+                </div>
+
+                <div>
+                    <img src="./images/clock.svg" alt="history-icon">
+                    History
+                </div>
+
+                <div>
+                    <img src="./images/tasks.svg" alt="tasks-icon">
+                    Tasks
+                </div>
+
+                <div>
+                    <img src="./images/communities.svg" alt="communities-icon">
+                    Communities
+                </div>
+            </div>
+
+            <div id="settings">
+                <div>
+                    <img src="./images/settings.svg" alt="settings-icon">
+                    Settings
+                </div>
+
+                <div>
+                    <img src="./images/support.svg" alt="support-icon">
+                    Support
+                </div>
+
+                <div>
+                    <img src="./images/privacy.svg" alt="privacy-icon">
+                    Privacy
+                </div>
+            </div>
+
+
         </div>
 
-
         <div id="header">
-            <div id="search-bar"></div>
-            <div id="user-profile">Morgan Oakley</div>
-            <div>Hi there,</div>
-            <div>Morgan Oakley (@morgan)</div>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+            <div id="user-header-top">
+                <div id="search-bar">
+                    <input type="search" name="search-bar">
+                </div>
+
+                <div id="user-profile">
+                    <img id="notification-bell" src="./images/bell.svg" alt="notification-icon">
+                    <img id="profile-icon" src="./images/profile.svg" alt="profile icon">
+                    Morgan Oakley
+                </div>
+            </div>
+
+            <div id="user-header-bottom">
+                <img id="profile-picture" src="./images/profile.svg" alt="profile icon">
+                <div id="user-info">
+                    <div>
+                        <div>Hi there,</div>
+                        <div>Morgan Oakley (@morgan)</div>
+                    </div>
+                </div>
+
+                <div id="buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
         </div>
 
         <div id="main-content">
             <div id="your-projects">
+                <div id="project-title">Your Projects</div>
                 <div class="card">
                     <div>Super Cool Project</div>
                     <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam quam at ultrices
@@ -94,60 +156,51 @@
             </div>
 
             <div id="announcements">
-
-                <div id="announcements-container">
-
-                    <div class="announcement">
-                        <div>Site Maintenance</div>
-                        <div>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                            Phasellus faucibus eu
-                            lectus
-                            vitae placerat.
-                        </div>
+                Announcements
+                <div class="announcement">
+                    <div>Site Maintenance</div>
+                    <div>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Phasellus faucibus eu
+                        lectus
+                        vitae placerat.
                     </div>
-
-                    <div class="announcement">
-                        <div>Community Share Day</div>
-                        <div>Nullam tristique fermentum accumsan. Nullam at massa quis massa viverra convallis. Nam
-                            congue nunc id enim tincidunt
-                            placerat. Phasellus dapibus orci sit amet tortor pellentesque condimentum.
-                        </div>
-                    </div>
-
-                    <div class="announcement">
-                        <div>Updated Privacy Policy</div>
-                        <div>Phasellus eget lacinia nisi. Nunc volutpat fringilla varius. Mauris dignissim quam in purus
-                            mattis efficitur. Vestibulum semper cursus ligula, in scelerisque mauris commodo nec. Proin
-                            malesuada accumsan nibh quis pulvinar. Fusce
-                            ligula sem, malesuada non pulvinar vitae, convallis sit amet libero.
-                        </div>
-                    </div>
-
                 </div>
 
+                <div class="announcement">
+                    <div>Community Share Day</div>
+                    <div>Nullam tristique fermentum accumsan. Nullam at massa quis massa viverra convallis.
+                    </div>
+                </div>
+
+                <div class="announcement">
+                    <div>Updated Privacy Policy</div>
+                    <div>Phasellus eget lacinia nisi. Nunc volutpat fringilla varius. Mauris dignissim quam in purus
+                        mattis efficitur. Vestibulum semper cursus ligula, in scelerisque mauris commodo nec. Proin
+                        malesuada accumsan nibh quis pulvinar.
+                    </div>
+                </div>
             </div>
 
             <div id="trending">
-                <div class="trending-container">
-                    <div class="user">
-                        <div>@tegan</div>
-                        <div>World Peace Builder</div>
-                    </div>
+                Trending
+                <div class="user">
+                    <div>@tegan</div>
+                    <div>World Peace Builder</div>
+                </div>
 
-                    <div class="user">
-                        <div>@morgan</div>
-                        <div>Super Cool Project</div>
-                    </div>
+                <div class="user">
+                    <div>@morgan</div>
+                    <div>Super Cool Project</div>
+                </div>
 
-                    <div class="user">
-                        <div>@kendall</div>
-                        <div>Life Changing App</div>
-                    </div>
+                <div class="user">
+                    <div>@kendall</div>
+                    <div>Life Changing App</div>
+                </div>
 
-                    <div class="user">
-                        <div>@alex</div>
-                        <div>No Traffic Maker</div>
-                    </div>
+                <div class="user">
+                    <div>@alex</div>
+                    <div>No Traffic Maker</div>
                 </div>
             </div>
         </div>
