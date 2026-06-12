@@ -13,6 +13,11 @@ body {
 	display: grid;
 	grid-auto-flow: column;
 	align-items: center;
+	justify-content: center;
+}
+
+#user-profile > img {
+	margin-right: 20px;
 }
 
 #user-profile > #profile-icon {
@@ -27,10 +32,18 @@ body {
 
 #user-info {
 	display: grid;
+	grid-template-columns: 1fr 11fr;
 	grid-auto-flow: column;
+	align-content: center;
+	margin: 0 40px;
 }
 
-#user-header-bottom > #profile-picture {
+#hi-there {
+	font-size: 12px;
+	margin-bottom: 3px;
+}
+
+#user-header-bottom > #user-info > #profile-picture {
 	width: 50px;
 	height: 50px;
 }
@@ -54,9 +67,10 @@ body {
 
 #header {
 	display: grid;
-	grid-template-rows: 60px 1fr;
+	grid-template-rows: 1fr 2fr;
 	grid-column-start: 2;
 	grid-column-end: 5;
+	font-weight: bold;
 }
 
 #user-header-top {
@@ -64,14 +78,30 @@ body {
 	grid-template-columns: 2fr 1fr;
 }
 
-#search-bar > img {
+#search-bar-container {
+	display: grid;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#search-bar-container > img {
 	width: 20px;
 	height: 20px;
 }
 
+#search-bar {
+	margin-left: 10px;
+	width: 650px;
+	border-style: none;
+	background-color: #f0f0f0;
+	border-radius: 20px;
+	padding: 5px;
+}
+
 #user-header-bottom {
 	display: grid;
-	grid-template-columns: 50px 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
 }
 
 #main-content {
@@ -123,4 +153,22 @@ body {
 	background-color: #ffff;
 	border-radius: 10px;
 	margin: 0 20px 20px 0;
+}
+
+#buttons {
+	display: grid;
+	grid-auto-flow: column;
+	align-content: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+button {
+	padding: 10px;
+	width: 100px;
+	border-radius: 20px;
+	border: none;
+	background-color: #1992d4;
+	color: #ffff;
+	font-weight: bold;
 }
