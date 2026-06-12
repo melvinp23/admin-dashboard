@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
 	display: grid;
 	margin: 0;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(4, 1fr);
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
 }
 
 #user-profile {
@@ -60,6 +64,11 @@ body {
 	grid-template-columns: 2fr 1fr;
 }
 
+#search-bar > img {
+	width: 20px;
+	height: 20px;
+}
+
 #user-header-bottom {
 	display: grid;
 	grid-template-columns: 50px 1fr 1fr;
@@ -78,6 +87,7 @@ body {
 	grid-template-rows: 30px 1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 	grid-row: span 3;
+	padding: 20px 0 20px 20px;
 }
 
 #project-title {
@@ -86,10 +96,31 @@ body {
 
 #announcements {
 	display: grid;
-	grid-template-rows: 30px 1fr;
+	grid-template-rows: 30px auto;
+	padding: 20px 20px 20px 0;
+}
+
+#announcements-content {
+	display: grid;
+	background-color: #ffff;
+	border-radius: 10px;
 }
 
 #trending {
 	display: grid;
-	grid-template-rows: 30px 1fr;
+	grid-template-rows: 30px auto;
+	padding: 0 20px 20px 0;
+}
+
+#trending-content {
+	display: grid;
+	background-color: #ffff;
+	border-radius: 10px;
+}
+
+.card {
+	display: grid;
+	background-color: #ffff;
+	border-radius: 10px;
+	margin: 0 20px 20px 0;
 }
